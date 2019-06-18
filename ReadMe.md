@@ -12,7 +12,7 @@
 
 
 
-### [Project Settings](https://github.com/huewilliams/challenge1-Entry4.0/tree/master/TypeScript/Project Settings)
+### [Project Settings](https://github.com/huewilliams/challenge1-Entry4.0/tree/master/TypeScript/Project%20Settings)
 
 프로젝트를 시작하기 전 개발 환경을 구성해보자.
 
