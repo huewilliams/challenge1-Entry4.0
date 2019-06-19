@@ -32,8 +32,8 @@
 
 Express 와 MongoDB 와 TypeScript로 RESTful API를 구현해보며 연습해보자.
 * Project Settings ✅
-* implement routing & CRUD 
-* implement model & controller
+* implement routing & CRUD ✅
+* implement model & controller  
 * connet MongoDB 
 * security
 
