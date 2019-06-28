@@ -28,10 +28,9 @@
 
   
 
-### [Express with TS Practice](https://github.com/huewilliams/challenge1-Entry4.0/tree/master/TypeScript/Express with%20TS%20Practice)
+### [Express with TS Practice](https://github.com/huewilliams/challenge1-Entry4.0/tree/master/TypeScript/Express%20with%20TS%20Practice)
 
 Express 를 TS로 연습해보자. 
 
 * STEP 1: `MVC` pattern 적용, interface, `controller` 구현 ✅
 * STEP 2: 환경 변수 설정, `MongoDB` with Mongoose, `model` 구현 
-
