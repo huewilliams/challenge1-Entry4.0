@@ -22,18 +22,16 @@
 
 - tsconfig.json 설정 ✅
 
-- tslint 적용 ✅
+- `tslint` 적용 ✅
 
 - package.json 실행 스크립트 작성 ✅
 
   
 
-### [REST, Express, MongoDB with TS](<https://github.com/huewilliams/challenge1-Entry4.0/tree/master/TypeScript/REST%2CExpress%2CMongoDB>)
+### [Express with TS Practice]([https://github.com/huewilliams/challenge1-Entry4.0/tree/master/TypeScript/Express%20with%20TS%20Practice](https://github.com/huewilliams/challenge1-Entry4.0/tree/master/TypeScript/Express with TS Practice))
 
-Express 와 MongoDB 와 TypeScript로 RESTful API를 구현해보며 연습해보자.
-* Project Settings ✅
-* implement routing & CRUD ✅
-* implement model & controller  
-* connet MongoDB 
-* security
+Express 를 TS로 연습해보자. 
+
+* STEP 1: `MVC` pattern 적용, interface, `controller` 구현✅
+* STEP 2: 환경 변수 설정, `MongoDB` with Mongoose, `model` 구현 
 
