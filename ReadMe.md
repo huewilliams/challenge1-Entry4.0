@@ -33,4 +33,7 @@
 Express 를 TS로 연습해보자. 
 
 * STEP 1: `MVC` pattern 적용, interface, `controller` 구현 ✅
-* STEP 2: 환경 변수 설정, `MongoDB` with Mongoose, `model` 구현 
+* STEP 2: 환경 변수 설정, `MongoDB` with Mongoose, `model` 구현  ✅
+
+* STEP 3: Error Handling, Validating data middleware 구현
+
