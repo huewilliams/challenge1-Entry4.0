@@ -1,32 +1,46 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import Controller from './interfaces/controller.interface';
 
 class App {
     public app: express.Application;
-    public port: number;
 
-    constructor(controllers: Controller[], port:number) {
+    constructor(controllers: Controller[]) {
         this.app = express();
-        this.port = port;
 
-        this.initalizeMiddlewares();
-        this.initalizeControllers(controllers);
+        this.connectToDatabase();
+        this.initializeMiddlewares();
+        this.initializeControllers(controllers);
     }
 
-    private initalizeMiddlewares() {
+    public listen() {
+        this.app.listen(process.env.PORT, () => {
+            console.log(`App is listening on the ${process.env.PORT} port`);
+        })
+    }
+
+    // setting middleware (3rd party)
+    private initializeMiddlewares() {
         this.app.use(express.json());
     }
 
-    private initalizeControllers(controllers: Controller[]) {
+    // controller 와 요청 경로를 연결함 (라우팅)
+    private initializeControllers(controllers: Controller[]) {
         controllers.forEach((controller: Controller) => {
             this.app.use('/', controller.router);
         })
     }
 
-    public listen() {
-        this.app.listen(this.port, () => {
-            console.log(`App is listening on the ${this.port} port`);
-        })
+    private connectToDatabase() {
+        const {
+            MONGO_USER,
+            MONGO_PASSWORD,
+            MONGO_PATH,
+        } = process.env;
+        mongoose.connect(
+            `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}${MONGO_PATH}`,
+            { useNewUrlParser: true}
+            )
     }
 }
 
