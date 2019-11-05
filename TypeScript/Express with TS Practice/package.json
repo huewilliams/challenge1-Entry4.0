@@ -16,6 +16,6 @@
     "envalid": "^5.0.0",
     "express": "^4.17.1",
     "invalid": "latest",
-    "mongoose": "^5.6.1"
+    "mongoose": "^5.7.5"
   }
 }
